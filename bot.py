@@ -82,12 +82,12 @@ def shift_end_for(start_time: datetime, current_time: datetime = None) -> dateti
 # =========================
 # GROUP LOCK
 # =========================
-ALLOWED_GROUP_ID = -1003692081885
+ALLOWED_GROUP_ID = -1004393501875
 
 # =========================
 # MANAGER — mentionné quand une pause est dépassée
 # =========================
-MANAGER_USERNAMES = ["@apasiihhhzz", "@cegilinuarea", "@voplaledalala2"]
+MANAGER_USERNAMES = ["@Up4Them", "@lamineltc"]
 managers_mention = " ".join(MANAGER_USERNAMES)
 
 
