@@ -52,8 +52,8 @@ PORT  = int(os.getenv("PORT", 10000))
 # TIMEZONE / HORAIRES MADAGASCAR
 # =========================
 MADAGASCAR_TZ = ZoneInfo("Indian/Antananarivo")
-WORK_START_TIME = (19, 0)  # 19h00 Madagascar
-WORK_END_TIME   = (12, 0)  # 12h00 Madagascar, le lendemain pour le service de nuit
+WORK_START_TIME = (19, 0)  
+WORK_END_TIME   = (23, 59)  
 
 def now_madagascar() -> datetime:
     return datetime.now(MADAGASCAR_TZ)
@@ -648,7 +648,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "🔵 *Back to Seat*\n"
         "Press after each break to confirm your return.\n\n"
         "🚻 *Small toilet* and 🚬 *Smoke* breaks are available only.\n\n"
-        "🕛 *Possible end of work: 12:00*.\n\n"
+        "🕛 *Possible end of work: 12:00 PM*.\n\n"
         "🕕 *Return Before End*\n"
         "🏢 Yo, what the company cares about right now is your focus and your hustle on the job.\n\n"
         "🔴 *Off Work*\n"
